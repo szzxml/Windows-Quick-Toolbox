@@ -1,6 +1,6 @@
 {
   "name": "windows-quick-toolbox",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Windows Quick Toolbox built with Electron, Vue 3 and TypeScript.",
   "main": "./out/main/main.js",
   "author": "Codex",
@@ -12,7 +12,8 @@
     "build": "electron-vite build",
     "preview": "electron-vite preview",
     "typecheck": "vue-tsc --noEmit -p tsconfig.web.json && tsc --noEmit -p tsconfig.node.json",
-    "dist": "npm run build && electron-builder"
+    "dist": "npm run build && electron-builder",
+    "dist:offline-release": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\scripts\\build-offline-release.ps1"
   },
   "dependencies": {
     "@vueuse/core": "^11.3.0",
@@ -37,6 +38,7 @@
   "build": {
     "appId": "com.codex.windows-quick-toolbox",
     "productName": "Windows Quick Toolbox",
+    "electronDist": "node_modules/electron/dist",
     "directories": {
       "output": "release"
     },
@@ -46,6 +48,7 @@
       "package.json"
     ],
     "win": {
+      "signAndEditExecutable": false,
       "target": [
         {
           "target": "nsis",
