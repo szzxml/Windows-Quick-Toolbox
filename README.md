@@ -105,3 +105,7 @@ npm run dist
 ## 许可证
 
 MIT
+
+## 致谢
+
+[LINUX DO 社区](https://linux.do/)
