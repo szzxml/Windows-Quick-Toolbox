@@ -1,0 +1,59 @@
+{
+  "name": "windows-quick-toolbox",
+  "version": "0.1.0",
+  "description": "Windows Quick Toolbox built with Electron, Vue 3 and TypeScript.",
+  "main": "./out/main/main.js",
+  "author": "Codex",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.web.json && tsc --noEmit -p tsconfig.node.json",
+    "dist": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "@vueuse/core": "^11.3.0",
+    "pinia": "^2.1.7",
+    "sudo-prompt": "^9.2.1",
+    "systeminformation": "^5.23.7",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuedraggable": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.14",
+    "vue-tsc": "^2.2.0"
+  },
+  "build": {
+    "appId": "com.codex.windows-quick-toolbox",
+    "productName": "Windows Quick Toolbox",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "out/**/*",
+      "dist/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[data-theme='dark'] {
+  --app-bg: linear-gradient(180deg, #0f1217 0%, #131923 100%);
+  --surface-1: rgba(19, 25, 35, 0.9);
+  --surface-2: rgba(22, 30, 42, 0.94);
+  --surface-3: rgba(32, 41, 56, 0.8);
+  --surface-hover: rgba(96, 205, 255, 0.12);
+  --surface-active: rgba(96, 205, 255, 0.18);
+  --text-primary: #f4f8ff;
+  --text-secondary: #c7d2dd;
+  --text-muted: #8f9dad;
+  --accent: #60cdff;
+  --accent-strong: #3eb9ef;
+  --accent-soft: rgba(96, 205, 255, 0.16);
+  --success: #3fb950;
+  --warning: #f0b44c;
+  --danger: #ff7b72;
+  --border-color: rgba(244, 248, 255, 0.08);
+  --border-strong: rgba(244, 248, 255, 0.12);
+}

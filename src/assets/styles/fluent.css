@@ -1,0 +1,41 @@
+.glass-panel {
+  background: var(--surface-1);
+  border: var(--stroke-soft);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(20px);
+}
+
+.page-shell {
+  display: grid;
+  gap: var(--space-6);
+  animation: fade-up var(--transition-normal);
+}
+
+.page-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.metric-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.detail-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.mono-block {
+  background: var(--surface-3);
+  border: var(--stroke-soft);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+  overflow: auto;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}

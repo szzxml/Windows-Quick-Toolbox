@@ -1,0 +1,19 @@
+[data-theme='light'] {
+  --app-bg: linear-gradient(180deg, #f4f8fc 0%, #edf3f9 100%);
+  --surface-1: rgba(255, 255, 255, 0.85);
+  --surface-2: rgba(255, 255, 255, 0.94);
+  --surface-3: rgba(245, 249, 253, 0.88);
+  --surface-hover: rgba(0, 120, 212, 0.08);
+  --surface-active: rgba(0, 120, 212, 0.14);
+  --text-primary: #10151b;
+  --text-secondary: #576574;
+  --text-muted: #7b8794;
+  --accent: #0a78d1;
+  --accent-strong: #025ea6;
+  --accent-soft: rgba(10, 120, 209, 0.14);
+  --success: #198754;
+  --warning: #b7791f;
+  --danger: #b42318;
+  --border-color: rgba(16, 21, 27, 0.08);
+  --border-strong: rgba(16, 21, 27, 0.14);
+}
